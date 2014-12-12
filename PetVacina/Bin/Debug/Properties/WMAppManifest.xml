@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="pt-BR" />
+  <App xmlns="" ProductID="{bddf4433-f6d1-4d86-8fb0-92aadc5efeaa}" Title="PetVacina" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Patibborges" Description="Pet Vacina foi criado com o intuíto de ajudar as pessoas com a monitoração das vacinas dos nossos bichinhos que tanto amamos." Publisher="PetVacina" PublisherID="{387d6ba7-7546-4329-941d-9ccf3881dc17}">
+    <IconPath IsRelative="true" IsResource="false">PetVacinaLogo.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
+      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
+      <Capability Name="ID_CAP_SENSORS" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="Page1.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="PetVacinaToken" TaskName="_default">
+        <TemplateFlip>
+          <SmallImageURI IsRelative="true" IsResource="false">PetVacinaLogo.png</SmallImageURI>
+          <Count>0</Count>
+          <BackgroundImageURI IsRelative="true" IsResource="false">PetVacinaLogo.png</BackgroundImageURI>
+          <Title>PetVacina</Title>
+          <BackContent></BackContent>
+          <BackBackgroundImageURI></BackBackgroundImageURI>
+          <BackTitle></BackTitle>
+          <DeviceLockImageURI></DeviceLockImageURI>
+          <HasLarge></HasLarge>
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>
+<!-- WPSDK Version 8.0.9900 -->

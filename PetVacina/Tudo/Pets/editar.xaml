@@ -1,0 +1,52 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PetVacina.Tudo.editar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="/Icones/PetVacinaFundo.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="PET VACINA" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="Editar Pet" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Margin="0,151,24,10" Grid.RowSpan="2">
+            <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Nome Do Pet" VerticalAlignment="Top" FontFamily="Segoe UI Symbol" FontSize="24" FontWeight="Bold" Foreground="#FF9CEE7E"/>
+            <TextBox x:Name="txbNomePetEdit" HorizontalAlignment="Left" Height="72" Margin="0,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="456"/>
+            <TextBlock HorizontalAlignment="Left" Margin="20,155,0,0" TextWrapping="Wrap" Text="Animal De Estimação" VerticalAlignment="Top" FontFamily="Segoe UI Symbol" FontSize="24" FontWeight="Bold" Foreground="#FF9CEE7E"/>
+            <TextBox x:Name="txbBichoEdit" HorizontalAlignment="Left" Height="72" Margin="0,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="456"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,307,0,0" TextWrapping="Wrap" Text="Dono" VerticalAlignment="Top" FontFamily="Segoe UI Symbol" FontSize="24" FontWeight="Bold" Foreground="#FF9CEE7E"/>
+            <TextBox x:Name="txbDonoEdit" HorizontalAlignment="Left" Height="72" Margin="0,334,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="456"/>
+            <Button Content="Salvar" HorizontalAlignment="Left" Margin="150,461,0,0" VerticalAlignment="Top" Click="Button_Click" Height="82" Width="152" BorderBrush="#FFD8AF23">
+                <Button.Foreground>
+                    <ImageBrush Stretch="Fill"/>
+                </Button.Foreground>
+                <Button.Background>
+                    <ImageBrush Stretch="Uniform" ImageSource="/Icones/patinha-para-mensagem-laranja.png"/>
+                </Button.Background>
+            </Button>
+
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

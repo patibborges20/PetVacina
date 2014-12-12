@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Phone
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetVacina", "PetVacina\PetVacina.csproj", "{BDDF4433-F6D1-4D86-8FB0-92AADC5EFEAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDDF4433-F6D1-4D86-8FB0-92AADC5EFEAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDDF4433-F6D1-4D86-8FB0-92AADC5EFEAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDDF4433-F6D1-4D86-8FB0-92AADC5EFEAA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BDDF4433-F6D1-4D86-8FB0-92AADC5EFEAA}.Debug|ARM.ActiveCfg = Debug|ARM
+		{BDDF4433-F6D1-4D86-8FB0-92AADC5EFEAA}.Debug|ARM.Build.0 = Debug|ARM
+		{BDDF4433-F6D1-4D86-8FB0-92AADC5EFEAA}.Debug|ARM.Deploy.0 = Debug|ARM
+		{BDDF4433-F6D1-4D86-8FB0-92AADC5EFEAA}.Debug|x86.ActiveCfg = Debug|x86
+		{BDDF4433-F6D1-4D86-8FB0-92AADC5EFEAA}.Debug|x86.Build.0 = Debug|x86
+		{BDDF4433-F6D1-4D86-8FB0-92AADC5EFEAA}.Debug|x86.Deploy.0 = Debug|x86
+		{BDDF4433-F6D1-4D86-8FB0-92AADC5EFEAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDDF4433-F6D1-4D86-8FB0-92AADC5EFEAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDDF4433-F6D1-4D86-8FB0-92AADC5EFEAA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BDDF4433-F6D1-4D86-8FB0-92AADC5EFEAA}.Release|ARM.ActiveCfg = Release|ARM
+		{BDDF4433-F6D1-4D86-8FB0-92AADC5EFEAA}.Release|ARM.Build.0 = Release|ARM
+		{BDDF4433-F6D1-4D86-8FB0-92AADC5EFEAA}.Release|ARM.Deploy.0 = Release|ARM
+		{BDDF4433-F6D1-4D86-8FB0-92AADC5EFEAA}.Release|x86.ActiveCfg = Release|x86
+		{BDDF4433-F6D1-4D86-8FB0-92AADC5EFEAA}.Release|x86.Build.0 = Release|x86
+		{BDDF4433-F6D1-4D86-8FB0-92AADC5EFEAA}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

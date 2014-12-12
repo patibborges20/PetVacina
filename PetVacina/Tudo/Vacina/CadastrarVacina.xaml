@@ -1,0 +1,58 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PetVacina.Tudo.CadastrarVacina"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+     xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+    <phone:PhoneApplicationPage.Resources>
+        <ImageBrush x:Key="Brush1" Stretch="Fill" ImageSource="/Icones/ilustra-seringa.png"/>
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="/Icones/Fundo-vacina.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="PET VACINA" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="Vacina" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="#FFB0F192"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="14,0,10,0">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFBDFAFF" FontWeight="Bold" FontSize="26" Margin="10,10,0,0">
+            	<Run Text="Nome Da Vacina"/>
+            	<LineBreak/>
+            	<Run/>
+            </TextBlock>
+            <TextBox x:Name="txbNomeVacina" HorizontalAlignment="Left" Height="72" Margin="0,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFAEF8FF" FontWeight="Bold" FontSize="26" Height="40">
+            	<Run Text="Data De Vacinação"/>
+            	<LineBreak/>
+            	<Run/>
+            </TextBlock>
+            <toolkit:DatePicker Name="datapicker" Margin="0,193,-10,-241" ValueChanged="datapicker_ValueChanged" Background="#FFC4CCCD" Foreground="Black" ></toolkit:DatePicker>
+
+            <TextBlock x:Name="txbData" HorizontalAlignment="Left" Height="72" Margin="315,114,-10,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" Text="00/00/0000"
+                       Style="{StaticResource PhoneTextAccentStyle}" Visibility="Collapsed"/>
+            <Button Content="Salvar" HorizontalAlignment="Left" Margin="131,301,0,0" VerticalAlignment="Top" Click="Button_Click" Height="99" Width="149" BorderBrush="#FF41B3B8" Background="#FF25B639" Foreground="Black" FontWeight="Bold" FontSize="28"/>
+
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>
